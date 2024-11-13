@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+   --mainwhite:#fff;
+    --mainprimarey:#6d289d;
+    --maincolor:#dd6525;
+    --mainone:#55ffdd;
+    --mainSpacing:0.1 rem;
+    --maintransition:all 0.3 linear;
+    --headcolor:#fdfdfd;
+    --zaminecolo:#2d2d2d;
+    --twocolor:#d2d2d2;
+    
+}
+body{
+    direction: rtl;
+    position: relative;
+    background-color: var(--mainwhite);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    direction: rtl;
+
+}
+.header{
+    position: sticky;
+    top:0;
+    display: flex;
+flex-direction: column;
+width: 100%;
+height: 170px;
+justify-content:space-around;
+align-items: center;
+background-color: var(--mainone);
+padding-bottom: 1rem;
+
+}
+#search{
+    border:none;
+    outline: none;
+    padding: 10px 20px;
+    font-weight: bold;
+   width:22rem;
+   
+}
+#search:focus{
+    border:2px solid var(--mainprimarey);
+}
+.filter-box{
+    display: flex;
+    justify-content:space-around ;
+    width: 50%;
+
+}
+.filter-box a{
+    display: block;
+   border: 1px solid var(--mainprimarey);
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: var(--mainprimarey);
+    background-color: var(--mainwhite);
+
+}
+.filter-box a:hover{
+    background-color:var(--mainprimarey) ;
+    color: var(--mainwhite);
+    
+
+}
+section.products{
+    padding: 15px;
+    background-color: var(--mainprimarey);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 20px;
+   
+
+    
+}
+.product{
+    padding: 10px;
+    text-align: center;
+   
+
+}
+.product .image-container {
+
+    height: 200px;
+
+}
+.product .image-container img {
+
+    width: 100%;   
+    height: 100%;
+   
+}
+.product .product-desc{
+   
+  padding: 10px;
+    background-color: var(--mainwhite);
+
+
+
+}
+.product .product-desc .product-price{
+   display: flex;
+   justify-content: space-between;
+      
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--zaminecolo);
+    padding: 10px;
+      
+      
+  
+  
+  }
+ 
